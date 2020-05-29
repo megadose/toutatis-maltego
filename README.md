@@ -6,7 +6,7 @@ Toutatis is a tool that allows you to extract information from instagrams accoun
 
 ## 💡 Prerequisite
    [Python](https://www.python.org/downloads/release/python-370/)
-## 🛠️ For the Installation check the [wiki](https://github.com/megadose/toutatis-maltego/wiki/installation)
+## 🛠️ For the Installation check the [wiki](https://github.com/megadose/toutatis-maltego/wiki/Installation)
 ## Example
 ![](demo.gif)
 ## 📝 License
