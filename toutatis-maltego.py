@@ -53,8 +53,6 @@ isnta.addProperty(fieldName="External_url",value=str(str(infos["external_url"]))
 isnta.addProperty(fieldName="IGTV_posts",value=str(str(infos["total_igtv_videos"])))
 isnta.addProperty(fieldName="Biography",value=str(str(infos["biography"])))
 
-if info["recoveryEmail"]!="NULL":
-    trx.addEntity("maltego.EmailAddress", str(info["recoveryEmail"])).setNote("Recovery Email")
 trx.addEntity("maltego.Image", username+" Profile Picture").setIconURL(info["ProfilePicture"].split("?")[0])
 
 
