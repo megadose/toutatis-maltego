@@ -14,7 +14,6 @@ mt = MaltegoTransform()
 trx = MaltegoTransform()
 userId=getUserId(username,sessionsID)
 
-recoveryemail=recoveryEmail(username)
 cookies = {'sessionid': sessionsID}
 headers = {'User-Agent': 'Instagram 64.0.0.14.96',}
 response = get('https://i.instagram.com/api/v1/users/'+userId+'/info/', headers=headers, cookies=cookies)
@@ -33,7 +32,7 @@ try:
 except:
     publicPhone=""
     pass
-info = {"username":username,"userID":userId,"FullName":infos["full_name"],"biography":str(infos["biography"]),"public_phone_number":publicPhone,"recoveryEmail":recoveryemail,"ProfilePicture":infos["profile_pic_url"]}
+info = {"username":username,"userID":userId,"FullName":infos["full_name"],"biography":str(infos["biography"]),"public_phone_number":publicPhone,"ProfilePicture":infos["profile_pic_url"]}
 
 
 
